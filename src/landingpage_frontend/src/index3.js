@@ -1,4 +1,4 @@
-import { landingpage_backend } from "../../declarations/landingpage_backend";
+import { multisigpage_backend } from "../../declarations/multisigpage_backend";
 
 document.querySelector("form").addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -9,7 +9,7 @@ document.querySelector("form").addEventListener("submit", async (e) => {
   button.setAttribute("disabled", true);
 
   // Interact with foo actor, calling the greet method
-  const greeting = await landingpage_backend.greet(name);
+  const greeting = await multisigpage_backend.greet(name);
 
   button.removeAttribute("disabled");
 
