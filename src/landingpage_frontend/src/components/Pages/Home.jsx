@@ -77,9 +77,9 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Discover &amp; Collect <br />NFT Artwork"
-        mintNumber="0"
-        mintMax="725"
+        title="Co-own wallet &amp; <br />NFT Licensing"
+        mintNumber="220"
+        mintMax="∞"
         mintPrice="0.02"
         mintDeathLine="22 July"
         bgUrl="/images/hero_bg.jpeg"

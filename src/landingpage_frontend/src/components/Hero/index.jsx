@@ -5,7 +5,7 @@ import Button from '../Button';
 import './hero.scss'
 import Section from '../Section';
 import Modal from '../Modal';
-
+// import ParticleAnimation from '../particles';
 export default function Hero({title, mintNumber, mintMax, mintPrice, mintDeathLine, bgUrl, heroImageUrl, animatedUrl, variant, bubble, overlay, bgOpacity}) {
   return (
     
@@ -14,20 +14,28 @@ export default function Hero({title, mintNumber, mintMax, mintPrice, mintDeathLi
         <Section className="cs-hero_bg" style={{opacity:bgOpacity}}>
           <Parallax bgImage={bgUrl} bgImageAlt="Hero" strength={120}></Parallax>
         </Section>
+        {/* <ParticleAnimation/> */}
         <Section className="container">
-          <Section className="cs-hero_text">
+          <Section className="cs-hero_text"> 
           <Section tag='h2' className="cs-hero_secondary_title cs-font_24 cs-font_18_sm">{mintNumber} / {mintMax}&nbsp; Minted</Section>
             <Section tag='h1' className="cs-hero_title cs-font_64 cs-font_36_sm cs-bold">{parse(title)}</Section>
             <Section className="cs-btn_group">
-              <Modal modalType='mint' btnText='Mint Now' />
-              <Button 
+            <Button 
+                btnLink='/' 
+                btnText='Link to co-own.wallet' 
+                variant='cs-color1'
+              />
+              <Modal modalType='mint' btnText='Join the Waitlist' />
+              <Modal modalType='mint' btnText='Link to NFT Marketplace' />
+              <Modal modalType='mint' btnText='Contact us' />
+              {/* <Button 
                 btnLink='/' 
                 btnText='Join the Waitlist' 
                 variant='cs-color1'
-              />
+              /> */}
             </Section>
-            <Section tag='h3' className="cs-hero_subtitle cs-font_18 cs-font_16_sm cs-body_line_height">Max 3 NFTs Per Wallet. Price <Section tag='span' className="cs-accent_color">{mintPrice}</Section> ETH <br />
-              Mint is Live Until <Section tag='span' className="cs-accent_color">{mintDeathLine}</Section></Section>
+            <Section tag='h3' className="cs-hero_subtitle cs-font_18 cs-font_16_sm cs-body_line_height">Reserve your <Section tag='span' className="cs-accent_color">$TARS</Section> now, and join the wishlist for co-owned wallets! <br />
+              The co-owned wallets of <Section tag='span' className="cs-accent_color">COOWN</Section>Implement Standard transaction rulesets $TARS as licenced <br /> Non fungible tokens (NFT's) To mutually benefit waller members and investors </Section>
           </Section>
           <Section className="cs-hero_img">
             <img src={heroImageUrl} alt="Hero" />
