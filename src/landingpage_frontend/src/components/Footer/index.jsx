@@ -15,11 +15,13 @@ export default function Footer() {
         <Section className="container">
           <Section className="cs-height_100 cs-height_lg_70" />
           <Section className="cs-footer_logo">
-            <img src="/images/logo_footer.svg" alt="logo" className="cs-hide_dark" />
-            <img src="/images/logo_footer_white.svg" alt="logo" className="cs-hide_white" />
+            {/* <img src="/images/logo_footer.svg" alt="logo" className="cs-hide_dark" />
+            <img src="/images/logo_footer_white.svg" alt="logo" className="cs-hide_white" /> */}
+            {/* <img src="/images/COOWN_Logo_black.png" width="50px" height="50px" className="cs-hide_dark" /> */}
+            <img src='/images/COOWN_Logo.png' width="50px" height="50px" />
           </Section>
           <Section className="cs-height_25 cs-height_lg_25" />
-          <Section className="cs-social_btns cs-center">
+          {/* <Section className="cs-social_btns cs-center">
             <Link to="/" className="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover">
               <Icon icon="fa6-brands:facebook-f" />
             </Link>
@@ -35,11 +37,13 @@ export default function Footer() {
             <Link to="/" className="cs-center cs-primary_color cs-accent_bg_hover cs-light_bg cs-white_color_hover">
               <Icon icon="fa6-brands:whatsapp" />              
             </Link>
-          </Section>
+          </Section> */}
         </Section>
-        <Section className="cs-height_45 cs-height_lg_25" />
+        {/* <Section className="cs-height_45 cs-height_lg_25" /> */}
         <Section className="container">
-          <Section className="cs-copyright text-center">Copyright © 2022. All Rights Reserved by <span className="cs-primary_font cs-primary_color">AENFT</span></Section>
+          {/* <Section className="cs-copyright text-center">Copyright © 2022. All Rights Reserved by <span className="cs-primary_font cs-primary_color">AENFT</span></Section> */}
+          <Section className="cs-copyright text-center">Copyright © 2024 Managed-Trust.com LTD, Zurich.</Section> 
+          <Section className="cs-copyright text-center">Web3 technology, cookie-free.</Section> 
         </Section>
         <Section className="cs-height_25 cs-height_lg_25" />
       </Section>

@@ -5,7 +5,7 @@ import { pageTitle } from '../../helper'
 import Section from '../Section'
 import Spacing from '../Spacing'
 
-export default function BlogDetails() {
+export default function  BlogDetails() {
   pageTitle('Blog Details');
   useEffect(() => {
     window.scrollTo(0, 0)

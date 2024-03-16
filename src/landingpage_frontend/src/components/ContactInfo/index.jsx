@@ -15,12 +15,9 @@ export default function ContactInfo() {
           <Icon icon="fa6-solid:phone" />
         </Section>
         <Section className="cs-info_box_right">
-          <Section tag="h3">Call anytime</Section>
+          <Section tag="h3">Call, CET Office Hours</Section>
           <Section tag="p">
-            <span className="cs-medium">Mobile:</span> +99 098 234 123
-          </Section>
-          <Section tag="p">
-            <span className="cs-medium">Hotline:</span> 16234
+            <span className="cs-medium">Mobile:</span> +41 (0)43 288 61 64
           </Section>
         </Section>
       </Section>
@@ -32,11 +29,11 @@ export default function ContactInfo() {
         <Section className="cs-info_box_right">
           <Section tag="h3">Email us</Section>
           <Section tag="p">
-            <span className="cs-medium">Support:</span> support@gmail.com
+            info@co-own.io
           </Section>
-          <Section tag="p">
+          {/* <Section tag="p">
             <span className="cs-medium">Info:</span> hey@gmail.com
-          </Section>
+          </Section> */}
         </Section>
       </Section>
     </Section>

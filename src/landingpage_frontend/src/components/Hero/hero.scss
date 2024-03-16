@@ -1,4 +1,17 @@
 @import "../../sass/index.scss";
+.margin-0{
+  margin: 0px !important;
+}
+
+.bar::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 5px;
+    height: 35px;
+    background: linear-gradient(108.18deg, #EA4C89 -2.02%, #4D44C6 100%);
+}
 .cs-hero.cs-style1 {
   position: relative;
   padding: 70px 0;
@@ -60,7 +73,7 @@
   }
   .cs-hero_secondary_title {
     color: #fff;
-    margin-bottom: 20px;
+
   }
   .cs-hero_subtitle {
     color: #fff;
@@ -266,7 +279,7 @@
 }
 @media screen and (max-width: 1540px) {
   .cs-hero.cs-style1 {
-    min-height: 785px;
+    min-height: 606px;
   }
 }
 @media screen and (max-width: 1399px) {
@@ -325,4 +338,57 @@
   .cs-hero.cs-style1.cs-type1 .cs-hero_img_sm {
     left: 0;
   }
+}
+
+.counter_head{
+  margin-bottom: 0px !important;
+  z-index: 3;
+  color: #fff !important;
+  position: relative !important;
+  margin-top: 30px;
+}
+
+.counter_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  gap: 30px;
+  align-items: center;
+}
+.counter_card{
+  background-color: #fff;
+  padding: 15px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  position: relative;
+  z-index: 3;
+  justify-content: center;
+  align-items: center;
+  width: 6em;
+}
+.counter_first_child{
+  margin-bottom: 5px;
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.ccounter_second_child {
+  margin-bottom: 0px !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+.counter_dots{
+  display: flex;
+  gap: 5px;
+}
+
+.dot_class{
+  width: 7px;
+  height: 7px;
+  background-color: gray;
+  border-radius: 50%;
 }

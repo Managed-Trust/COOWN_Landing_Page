@@ -18,8 +18,8 @@ export default function Team({src, name, designation, facebookHref, linkedinHref
         <Section className="cs-height_20 cs-height_lg_20" />
         <Section className="cs-member_social cs-center">
           {facebookHref && (
-            <Link to={facebookHref} className="cs-primary_color cs-accent_color_hover">
-              <Icon icon="fa6-brands:facebook-f" />
+            <Link to={facebookHref} className="cs-primary_color cs-accent_color_hover chat_icon">
+              <img src='/images/openchat.svg' className='chat_style'/>
             </Link>
           )}
           {linkedinHref && (
@@ -29,7 +29,7 @@ export default function Team({src, name, designation, facebookHref, linkedinHref
           )}
           {whatsappHref && (
             <Link to={whatsappHref} className="cs-primary_color cs-accent_color_hover">
-              <Icon icon="fa6-brands:whatsapp" />         
+              <Icon icon="fa-brands:telegram" />       
             </Link>
           )}
         </Section>

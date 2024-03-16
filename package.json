@@ -7,7 +7,8 @@
     "Motoko",
     "JavaScript",
     "Canister"
-  ],  "scripts": {
+  ],
+  "scripts": {
     "build": "webpack",
     "prebuild": "dfx generate",
     "start": "webpack serve --mode development --env development",
@@ -24,20 +25,23 @@
     "@dfinity/principal": "^0.20.2",
     "@iconify/react": "^4.1.1",
     "bootstrap": "^5.3.1",
+    "framer-motion": "^10.16.16",
     "html-react-parser": "^5.0.11",
     "ic0": "^0.2.8",
     "node-sass": "^9.0.0",
     "react": "^18.2.0",
     "react-bootstrap": "^2.8.0",
     "react-dom": "^18.2.0",
-    "react-hook-form": "^7.45.2",
+    "react-hook-form": "^7.49.2",
     "react-parallax": "^3.5.1",
     "react-router-dom": "^6.14.2",
     "react-scroll": "^1.9.0",
     "react-slick": "^0.29.0",
     "sass": "^1.69.5",
     "sass-loader": "^13.3.2",
-    "slick-carousel": "^1.8.1"
+    "simplex-noise": "^2.4",
+    "slick-carousel": "^1.8.1",
+    "three": "^0.160.0"
   },
   "devDependencies": {
     "assert": "2.0.0",

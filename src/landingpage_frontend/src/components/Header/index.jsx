@@ -17,8 +17,8 @@ export default function Header() {
             <Section className="cs-main_header_in">
               <Section className="cs-main_header_left">
                 <Link to='/' className="cs-site_branding cs-accent_color">
-                  <img src="/images/logo1.png" alt="Logo" className="cs-hide_dark" />
-                  <img src="/images/logo1.png" alt="Logo" className="cs-hide_white" />
+                  {/* <img src="/images/COOWN_Logo_black.png" width="50px" height="50px" alt="Logo" className="cs-hide_dark" /> */}
+                  <img src="/images/COOWN_Logo.png" width="50px" height="50px" alt="Logo" />
                 </Link>
               </Section>
               <Section className="cs-main_header_center">

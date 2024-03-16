@@ -8,37 +8,25 @@ export default function RoadmapSlider() {
   const data = [
     {
       phase:'Phase 1', 
-      title:'Launch collection',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
+      title:'Focus on Financing',
+      subtitle:'Launch a Crowdfunding Campaign, conduct an Initial Coin Offering (ICO), and seek approval as an SNS DAO (optional, yet desired).',
     },{
       phase:'Phase 2', 
-      title:'Community Build',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
+      title:'Focus on Basic Features',
+      subtitle:'Launching Minimum Viable Product: CE Wallet for user-groups and recruiting Advisory Board members.',
     },{
       phase:'Phase 3', 
-      title:'Public Services',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
+      title:'Focus on Pro Features',
+      subtitle:'Develop Pro Features for transaction regulation, establish member disposition settings, and recruit Ambassadors.',
     },{
       phase:'Phase 4', 
-      title:'Next Generation',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
+      title:'Focus on Enterprise Features',
+      subtitle:'Launch Enterprise Edition wallet, adjusted to jurisdictions, Launch the NFT marketplace, and enable custom NFT series.',
     },{
       phase:'Phase 5', 
-      title:'Launch collection',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
-    },{
-      phase:'Phase 6', 
-      title:'Community Build',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
-    },{
-      phase:'Phase 7', 
-      title:'Public Services',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
-    },{
-      phase:'Phase 8', 
-      title:'Next Generation',
-      subtitle:'There are many variations of pass ges of Lorem Ipsum available, but the majority have suffered alterat ion in some form. There are many variations of passages.',
-    },
+      title:'Focus on Mass Adoption',
+      subtitle:'Enable stablecoins, initiate $TARS licenses, Onboard B2B clients using the UTOPIA subnets, Focus on Sustainability.',
+    }
   ]
   const SlickArrowLeft = ({ currentSlide, slideCount, ...props }) => (
     <div

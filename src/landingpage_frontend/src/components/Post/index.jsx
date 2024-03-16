@@ -8,7 +8,7 @@ import './post.scss'
 export default function Post({src, title, subtitle, href, btn}) {
   return (
     <Section className="cs-blog cs-style1">
-      <Link to={href} className="cs-blog_thumb cs-zoom_effect"><img src={src} alt="Thumb" className="w-100" /></Link>
+      <Link to={href} className="cs-blog_thumb cs-zoom_effect"><img src={src} alt="Thumb" width="110px" height="160px"/></Link>
       <Section className="cs-height_20 cs-height_lg_20" />
       <Section tag='h2' className="cs-blog_title cs-font_24 cs-font_18_sm cs-m0"><Link to={href}>{title}</Link></Section>
       <Spacing lg='5' md='5'/>
