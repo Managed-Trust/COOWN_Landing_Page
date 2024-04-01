@@ -3,11 +3,9 @@ import Principal "mo:base/Principal";
 import Int "mo:base/Int";
 import Nat "mo:base/Nat";
 import Text "mo:base/Text";
-import child "./child";
-import Cycles "mo:base/ExperimentalCycles";
 
 actor class LockupContract(ownerDeployer : Principal) = this {
-  // Bind the optional this argument (any name will do)
+  // Bind the optional `this` argument (any name will do)
   stable var lockedUntil : Int = 0;
   stable var tokens : Nat = 0;
   stable var owner : Principal = ownerDeployer;
@@ -128,22 +126,48 @@ actor class LockupContract(ownerDeployer : Principal) = this {
 
   //=====================================================================//
 
-  public query func getCanisterID() : async Principal {
-    return Principal.fromActor(this);
-  };
- 
-   public shared (msg) func mint(principalId : Principal) : async Principal {
+  var startTime : Int = 0; // Start time of the contract
+  let cliffDuration : Int = 6 * 30 * 24 * 60 * 60 * 1_000_000_000; // 6 months in nanoseconds
+  let vestingDuration : Int = 6 * 30 * 24 * 60 * 60 * 1_000_000_000; // Additional 6 months in nanoseconds
 
-    // if (msg.caller == Principal.fromText("2vxsx-fae")) {
-      let owner : Principal = msg.caller;
-      // Debug.print(debug_show (msg.caller));
-      // console.l60_000_631_070
-      Cycles.add(200_000_000_000); // Since this value increases as time passes, change this value according to error in console.
-      let childContract = await child.LockupContractChild(principalId);
-      let childContractPrincipal = await childContract.getCanisterID();
-      return childContractPrincipal;
-    // };
-    return msg.caller;
-   };
+  public func startVesting() : async Int {
+    startTime := Time.now();
+    return startTime;
+  };
+
+  public func claim2(caller : Principal, amount1 : Nat) : async Int {
+    let now = Time.now();
+    switch (startTime) {
+      case (startTime) {
+        if (caller == owner and now >= startTime + cliffDuration) {
+          // Calculate the portion of tokens that should be available based on linear vesting
+          let timeSinceCliffEnd = now - (startTime + cliffDuration);
+          let totalVestingTime : Int = if (timeSinceCliffEnd < vestingDuration) {
+            return timeSinceCliffEnd;
+          } else {
+            return vestingDuration;
+          };
+          // (timeSinceCliffEnd, vestingDuration);
+          let monthlyRelease = tokens / 6; // Total tokens divided by number of months in vesting period
+          let monthsVested = totalVestingTime / (30 * 24 * 60 * 60 * 1000000000); // Total vested months
+          let vestedAmount = monthlyRelease * monthsVested;
+          let claimableAmount = if (timeSinceCliffEnd < vestingDuration) {
+            return vestedAmount;
+          } else {
+            return tokens;
+          };
+          tokens := tokens - claimableAmount;
+          return claimableAmount;
+        } else {
+          // Not yet eligible for claiming tokens
+          return 0;
+        };
+      };
+      case (0) {
+        // Vesting not started
+        return 0;
+      };
+    };
+  };
 
 };
