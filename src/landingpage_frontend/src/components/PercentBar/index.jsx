@@ -26,28 +26,28 @@ function PercentBar() {
             <Section tag="section" id="percent_section">
                 <div className="section_container container">
                     <SectionHeading title="Ongoing token distribution" subtitle="Initial Coin Offering" />
-                    <Spacing lg="20" md="20" />
+                    <Spacing lg="10" md="10" />
                     <div className="bar_section">
                         <div className="price_bar">
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">5m Ꮬ</Section>
-                            <Section tag='h3'  className="cs-section_title cs-font_16 cs-font_14_sm">+5m Ꮬ</Section>
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">+5m Ꮬ</Section>
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">+20m Ꮬ</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">5m Ꮬ</Section>
+                            <Section tag='h3'  className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">+5m Ꮬ</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">+5m Ꮬ</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">+20m Ꮬ</Section>
                         </div>
                         <div className="bar_head">
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">Crowdfunding</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">Crowdfunding</Section>
                             <span>|</span>
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">Presale</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">Presale</Section>
                             <span>|</span>
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">Sale & Swap</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">Sale & Swap</Section>
                             <span>|</span>
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">DAO Launch</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">DAO Launch</Section>
                         </div>
                         <div style={containerStyles}>
                             <div style={fillerStyles}></div>
                         </div>
                         <div className="bar_footer">
-                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_14_sm">1 $COOWN = 0.1 SDR &#8773; 0.13 USD &#8773; 0.01 IPC</Section>
+                            <Section tag='h3' className="cs-section_title cs-font_16 cs-font_12_sm cs-font_10_xsm">1 $COOWN = 0.1 SDR &#8773; 0.13 USD &#8773; 0.01 IPC</Section>
                         </div>
                     </div>
                 </div>

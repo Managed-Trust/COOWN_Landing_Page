@@ -60,7 +60,7 @@ export default function Home() {
   return (
     <>
       <Hero
-        title="Co-own wallet for <br />Groups"
+        title="Co-own Wallet for <br />Groups"
         mintNumber="220"
         mintMax="∞"
         mintPrice="0.02"
@@ -79,7 +79,7 @@ export default function Home() {
               <Section className="cs-right_space_40">
                 <SectionHeading title="Empowering Group-Centric Finance with COOWN" subtitle="Revolutionizing Digital Asset Management" />
                 <Spacing lg="20" md="20" />
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   Want to share digital assets with others? COOWN Wallets combine individual control with teamwork.
                   Our platform is secure and cost-effective. Simplify your digital asset management with a solution that
                   guarantees flexibility, compliance, and seamless cooperation for both individuals and groups.
@@ -142,6 +142,37 @@ export default function Home() {
         </Section>
       </Section>
       <Spacing lg="65" md="35" />
+
+      <Section tag="section" id="about">
+        {/* <Spacing lg="75" md="45" /> */}
+        <Section className="container">
+          <Section className="row align-items-center flex-column-lg">
+            <Section className="col-lg-12">
+              <Spacing lg="0" md="40" />
+              <Section className="cs-right_space_150">
+                <SectionHeading
+                  title="Easy Group Wallets & NFTs "
+                  subtitle=" Safe & Simple Asset Sharing"
+                />
+                <Spacing lg="20" md="20" />
+                <Section tag="p" className='text-justify'>
+                  We built a crypto wallet for groups to easily manage money and digital assets together. It lets team leaders control spending and viewing rights of other users, and automated transaction.  This means managing coins and assets is quicker, cheaper, and more secure for everyone. Perfect for teams who want to handle assets without hassle.
+                </Section>
+                {/* <Spacing lg="25" md="15" /> */}
+                {/* <Button
+                  variant="cs-btn_filed cs-accent_btn"
+                  btnLink="https://opensea.io/"
+                  btnText="COLLECT NFTs"
+                >
+                  <Icon icon="ic:outline-library-add" />
+                </Button> */}
+              </Section>
+            </Section>
+          </Section>
+        </Section>
+      </Section>
+
+      <Spacing lg="65" md="35" />
       <PercentBar />
       <Spacing lg="100" md="70" />
       <Section className="container flex-property">
@@ -196,7 +227,17 @@ export default function Home() {
             >
               <img src='/images/DataSovereignty.svg' />
             </IconBox>
-            {/* <Spacing lg="25" md="25" /> */}
+            <Spacing lg="25" md="25" />
+          </Section>
+          <Section className="col-lg-4">
+            <IconBox
+              variant="cs-type1 text-center"
+              title="Custom RWA"
+              subtitle="Create your NFT series to bring Real-World Assets (RWA) online for your group or our marketplace."
+            >
+              <img src='/images/NFT_Folder.svg' />
+            </IconBox>
+            <Spacing lg="25" md="25" />
           </Section>
         </Section>
       </Section>
@@ -236,16 +277,16 @@ export default function Home() {
                   subtitle="Diverse Use Cases and Target Groups"
                 />
                 <Spacing lg="20" md="20" />
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Corporate Asset Allocation:</b> Tailor digital equity financing to your corporate structure.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Business Partner Transactions:</b> Secure and automate operations for SMBs, enhancing efficiency and trust.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Community Funds:</b> Manage community finances with equitable and transparent tools.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Family Wealth Management</b> Easily access shared funds and streamline estate planning for family harmony
                 </Section>
                 {/* <Spacing lg="25" md="15" /> */}
@@ -294,6 +335,7 @@ export default function Home() {
         <Section className="row">
           <Section className="col-lg-4">
             <IconBox
+              className='text-justify'
               title="Get an ICP ID"
               subtitle="Get a free ICP ID at internetcomputer.org for secure and affordable access to a variety of web3 services."
             >
@@ -303,6 +345,7 @@ export default function Home() {
           </Section>
           <Section className="col-lg-4">
             <IconBox
+              className='text-justify'
               title="Create a COOWN Wallet"
               subtitle="Launch your group wallet on COOWN. It's your hub for managing digital assets together."
             >
@@ -312,7 +355,7 @@ export default function Home() {
           </Section>
           <Section className="col-lg-4">
             <IconBox
-              iconNumber="02"
+              className='text-justify'
               title="Invite Your Team"
               subtitle="Add users as administrators, members, or viewers, customizing access to fit the group's needs."
             >
@@ -322,6 +365,7 @@ export default function Home() {
           </Section>
           <Section className="col-lg-4">
             <IconBox
+              className='text-justify'
               title="Set Automations"
               subtitle="Customize your wallet's capabilities and boost efficiency and security with integrated task automation bots."
             >
@@ -331,6 +375,7 @@ export default function Home() {
           </Section>
           <Section className="col-lg-4">
             <IconBox
+              className='text-justify'
               title="Handle Transactions"
               subtitle="Pay transaction fees only when needed, maximizing functionality while keeping costs low."
             >
@@ -340,6 +385,7 @@ export default function Home() {
           </Section>
           <Section className="col-lg-4">
             <IconBox
+              className='text-justify'
               title="Mint Digital Assets"
               subtitle="Create digital assets by converting real-world items into custom NFT series for trading within your community or publicly."
             >
@@ -354,7 +400,7 @@ export default function Home() {
         <Section className="container">
           <SectionHeading title="Meet the Team Shaping the Future" subtitle="The Visionaries Behind COOWN" />
           <Spacing lg="25" md="25" />
-          <Section tag="p">
+          <Section tag="p" className='text-justify'>
             Based on experience from the cybersecurity departments of Swiss banks, our founders are deeply passionate about creating a digital asset management platform that blends innovation, security, and user-friendliness. We are dedicated to empowering groups across the globe with the necessary tools for efficient and cooperative financial management.
           </Section>
           <Section className="row">
@@ -363,9 +409,10 @@ export default function Home() {
                 src="/images/member1.svg"
                 name="Simon Kaiser"
                 designation="Funder, CEO"
-                facebookHref="/"
-                linkedinHref="/"
-                whatsappHref="/"
+                facebookHref="https://oc.app/?ref=byzi2-ayaaa-aaaar-axcua-cai"
+                linkedinHref="https://www.linkedin.com/in/s-kaiser/"
+                whatsappHref="https://t.me/Skai88888"
+                dmailHref="mailto:zltde-3kt3u-acptu-up6ie-24dpz-zhii4-tnehy-m7ytv-eqjvk-sor7e-kqe@dmail.ai "
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -377,6 +424,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -386,8 +434,9 @@ export default function Home() {
                 name="N. Re."
                 designation="Front-End Developer"
                 facebookHref="/"
-                linkedinHref="/"
+                linkedinHref="https://www.linkedin.com/in/namir-rehman-ba917a1a2/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -399,6 +448,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -410,6 +460,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -421,6 +472,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -432,6 +484,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -443,6 +496,7 @@ export default function Home() {
                 facebookHref="/"
                 linkedinHref="/"
                 whatsappHref="/"
+                dmailHref="/"
               />
               <Spacing lg="25" md="25" />
             </Section>
@@ -470,16 +524,16 @@ export default function Home() {
                   subtitle="Transparent and Secure Governance"
                 />
                 <Spacing lg="20" md="20" />
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>ICO Participation: </b>Buy $COOWN tokens. Engage in DAO to shape COOWN's direction and enjoy the currency's growth.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Venture Capital: </b>Explore our investor information. Learn about digital asset management investment opportunities.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Early Access: </b>Join our exclusive waitlist for early access to groundbreaking features, including NFT minting for real-world asset digitalization.
                 </Section>
-                <Section tag="p">
+                <Section tag="p" className='text-justify'>
                   <b>Careers: </b>Apply as a developer, consultant, or ambassador. Play a key role in COOWN's development and market presence.
                 </Section>
                 <Spacing lg="25" md="15" />
@@ -524,11 +578,11 @@ export default function Home() {
         </Section>
       </Section>
       <Spacing lg="50" md="30" />
-      <Section className="container" id="blog_field">
+      {/* <Section className="container" id="blog_field">
         <SectionHeading title="Recent Post" subtitle="BLOG" />
         <Spacing lg="50" md="30" />
         <BlogSlider />
-      </Section>
+      </Section> */}
       <Section id="contact">
         <Spacing lg="95" md="70" />
         <Section className="container">

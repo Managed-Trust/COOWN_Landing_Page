@@ -384,7 +384,7 @@
     li.menu-item-has-children
     > a:after {
     content: "\f054";
-    font-family: "Font Awesome 5 Free";
+    font-family: "Poppins", sans-serif;
     font-weight: 800;
     position: absolute;
     top: 50%;
@@ -663,4 +663,8 @@
   .cs-toolbox > a:not(:first-child) {
     margin-left: 0;
   }
+}
+
+.nav_font{
+  font-family: "Poppins", sans-serif !important;
 }

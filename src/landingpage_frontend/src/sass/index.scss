@@ -50,7 +50,7 @@ h6 {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 52px;
 }
 
 h2 {
@@ -1442,6 +1442,17 @@ kbd {
       padding: 0 25px 20px 25px;
     }
   }
+  @media screen and (max-width: 768px){
+    .cs-font_12_sm{
+      font-size: 12px !important;
+    }
+  }
+
+  @media screen and (max-width: 435px){
+    .cs-font_10_xsm{
+      font-size: 10px !important;
+    }
+  }
 
   .cs-dark {
     background-color: #06182c;
@@ -1643,4 +1654,8 @@ kbd {
     display: flex;
     flex-direction: column;
     gap: 20px;
+  }
+
+  .text-justify{
+    text-align: justify;
   }

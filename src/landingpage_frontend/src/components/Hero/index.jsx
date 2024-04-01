@@ -10,7 +10,7 @@ import SectionHeading from "../SectionHeading";
 export default function Hero({ title, mintNumber, mintMax, mintPrice, mintDeathLine, bgUrl, heroImageUrl, animatedUrl, variant, bubble, overlay, bgOpacity }) {
 
   const calculateTimeLeft = () => {
-    const difference = +new Date('2024-05-01T23:59:59') - +new Date();
+    const difference = +new Date('2024-07-09T23:59:59') - +new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -64,7 +64,7 @@ export default function Hero({ title, mintNumber, mintMax, mintPrice, mintDeathL
       <Section className="container">
         <Section className="cs-hero_text">
           <SectionHeading subtitle="COOWN" className="margin-0" />
-          <Section tag='h1' className="cs-hero_title cs-bold">{parse(title)}</Section>
+          <Section tag='h1' className="cs-hero_title">{parse(title)}</Section>
           <Section className="cs-btn_group">
             {/* <Button
               btnLink='/'
